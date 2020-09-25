@@ -9,5 +9,5 @@ RUN apk --no-cache add ca-certificates youtube-dl tzdata libc6-compat libgcc lib
 WORKDIR /root
 COPY --from=builder /go/src/github.com/linsongze/iptvproxy/.env .
 COPY --from=builder /go/src/github.com/linsongze/iptvproxy/iptvProxy .
-EXPOSE 443
+EXPOSE 19000
 CMD ["./iptvProxy"]
