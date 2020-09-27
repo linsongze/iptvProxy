@@ -9,4 +9,5 @@ WORKDIR /root
 COPY --from=builder /go/src/github.com/linsongze/iptvproxy/.env .
 COPY --from=builder /go/src/github.com/linsongze/iptvproxy/iptvProxy .
 EXPOSE 19000
+VOLUME ["/root/data"]
 CMD ["./iptvProxy"]

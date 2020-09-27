@@ -1,0 +1,4 @@
+#docker build -t iptvproxy .  -f Arm64_Dockerfile
+#docker build -t iptvproxy .  -f Dockerfile
+#docker run -d --name iptvproxy --privileged --restart always -p 0.0.0.0:
+19000:19000 iptvproxy
